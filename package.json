@@ -1,0 +1,40 @@
+{
+  "name": "@solveitsimply/mcp-helpscout",
+  "version": "1.0.0",
+  "description": "MCP server for the full Help Scout API (Docs + Inbox)",
+  "type": "module",
+  "bin": {
+    "mcp-helpscout": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "helpscout",
+    "help-scout",
+    "docs",
+    "inbox",
+    "model-context-protocol"
+  ],
+  "author": "SolveItSimply",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solveitsimply/mcp-helpscout.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
